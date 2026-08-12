@@ -489,32 +489,82 @@
       color: #64748b;
       margin-top: 4rem;
     }
+    .hero-header {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2;
+}
+
+.header-content {
+  position: relative;
+  z-index: 3;
+  padding: 40px 20px;
+}
+  .brand-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
   </style>
 </head>
 
 <body>
 
   <!-- Header -->
-  <header>
-    <!-- Easy-Select Brand Logo Header -->
+  <header class="hero-header">
+  <!-- Background Video -->
+  <video autoplay loop muted playsinline class="header-bg-video">
+    <source src="easyselect/Background.mp4" type="video/mp4">
+  </video>
+
+  <!-- Overlay to darken video so white text stays readable -->
+  <div class="header-overlay"></div>
+
+  <!-- Header Content (Text & Branding on top) -->
+  <div class="header-content">
     <div class="brand-container">
       <a href="#" class="brand-logo">
-        <!-- Clean Minimalist SVG Icon -->
-        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 10.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.5" />
-          <polyline points="9 11 12 14 22 4" />
-        </svg>
-
-        <!-- Brand Name Text -->
-        <span class="brand-text">Easy<span class="brand-accent">-Select</span></span>
-      </a>
+  <svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e91e63" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="9 11 12 14 22 4"></polyline>
+    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+  </svg>
+  <span class="brand-text">Easy<span class="brand-accent">-Select</span></span>
+</a>
     </div>
-
     <span class="brand-tag">ELEVATED LIFESTYLE & DAILY ESSENTIALS</span>
     <h1>Easy-Select</h1>
     <p>Aesthetic workspace essentials, luxe audio, beauty, and daily carry hand-picked for effortless shopping.</p>
-  </header>
+  </div>
+</header>
 
   <!-- Mandatory FTC Disclosure Banner -->
   <div class="ftc-wrapper">
@@ -551,6 +601,365 @@
   <!-- Product Grid -->
   <main class="product-grid">
     <!-- Headset Product Card -->
+     <article class="card" data-category="men">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://img.ltwebstatic.com/v4/j/spmp/2026/07/09/d1/1783561629f54ed811e886c16744ccc8614a49f3d5.jpg"alt="2-Pack Men's Street Style Ripped Stretch Slim Fit Straight Leg Jeans">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Men's Clothing<B></B></span>
+        <h2 class="card-title">Stretch Slim Fit Straight Leg Jeans</h2> 
+        <p class="card-description"></p>2-Pack Men's Street Style Ripped Stretch Slim Fit Straight Leg Jeans
+  <span class="price-tag">$27.65</span>
+        <div class="card-footer">
+          <a href="https://onelink.shein.com/47/5ylslpkietq9" target="_blank" class="btn-buy">
+            Buy on shein &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+     <article class="card" data-category="men">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://img.ltwebstatic.com/v4/j/spmp/2026/04/28/5e/17773739763753242cd47ad9e5fca6b43f6b6c51df.jpg"alt="Men's T-Shirt Set, 2-Piece Set,">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Men's Clothing<B></B></span>
+        <h2 class="card-title">Men's T-Shirt Set, 2-Piece Set,</h2> 
+        <p class="card-description"></p>Men's T-Shirt Set, 2-Piece Set,No Liberty, Just Vibes Pattern Print, Summer Short-Sleeve Shorts Set
+  <span class="price-tag">$15.27</span>
+        <div class="card-footer">
+          <a href="https://onelink.shein.com/47/5yls4i0t2axe" target="_blank" class="btn-buy">
+            Buy on shein &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <article class="card" data-category="men">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://img.ltwebstatic.com/v4/j/pi/2026/05/25/61/1779680143de68fa8d671f269034c3736b4cb26479.jpg"alt="Modcrash Men's Denim Shorts Pants">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Men's Clothing<B></B></span>
+        <h2 class="card-title">Modcrash Men's Denim Shorts Pants</h2> 
+        <p class="card-description"></p>Modcrash Men's Denim Shorts Pants, Streetwear Pattern Street Fashion, Party, Spring Summer, Dark
+  <span class="price-tag">$21.68</span>
+        <div class="card-footer">
+          <a href="https://onelink.shein.com/47/5ylrplcefdkc" target="_blank" class="btn-buy">
+            Buy on shein &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="men">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://img.ltwebstatic.com/v4/j/spmp/2026/04/17/0e/1776395017c3cceab4a8aa54bc49bd509c5b095b12.jpg"alt="1pc Men's Chess King Print Black TShirt">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Men's Clothing<B></B></span>
+        <h2 class="card-title">1pc Men's Chess King Print Black TShirt</h2> 
+        <p class="card-description"></p>1pc Men's Chess King Print Black TShirt, Crew Neck, Casual Cotton Tee Medium Stretch Knit Fabric, Men's Regular Fit, Size
+  <span class="price-tag">$4.52</span>
+        <div class="card-footer">
+          <a href="https://onelink.shein.com/47/5ylrekr6tr3i" target="_blank" class="btn-buy">
+            Buy on shein &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="men">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/61jpVPyLpxL._SL1500_.jpg"alt="Michael Malul Editor in Chief Esquire Fragrance">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Men's Cologne<B></B></span>
+        <h2 class="card-title">Michael Malul Editor in Chief Esquire Fragrance</h2> 
+        <p class="card-description"></p>Michael Malul Editor in Chief Esquire Fragrance Eau de Parfum for Men - 100ml | 3.4oz 
+  <span class="price-tag">$129.95</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/4wqcWl1" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="men">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/71zG+mdSlAL._SL1500_.jpg"alt="Prada Paradigme by Prada for Men">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Men's Cologne<B></B></span>
+        <h2 class="card-title">Prada Paradigme by Prada for Men</h2> 
+        <p class="card-description"></p>Prada Paradigme by Prada for Men 3.3 oz Eau de Parfum Spray | 
+  <span class="price-tag">$115.46</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/4huA3qJ" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="men">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/815IQreJ5HL._SL1500_.jpg"alt="A CENTER Men's Cologne Gift Set 4 x 3.4 FL oz">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Men's Cologne<B></B></span>
+        <h2 class="card-title">A CENTER Men's Cologne Gift Set 4 x 3.4 FL oz</h2> 
+        <p class="card-description"></p>A CENTER Men's Cologne Gift Set 4 x 3.4 FL oz|Luxury perfume with Premium Presentation Box|Perfect Valentine's Day Gift Him|Long Lasting Fragrance(ValiantMen&VintageHero&1Billion&Salvang)
+  <span class="price-tag">$55.91</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/4wohyIe" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="laptop">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/51dafnlz6wL._AC_SL1024_.jpg"alt="Apple MacBook Air">
+          </div>
+      <div class="card-body">
+        <span class="card-category">MacBook Air<B></B></span>
+        <h2 class="card-title">Apple MacBook Air</h2> 
+        <p class="card-description"></p>Apple MacBook Air (13-inch Retina display, 1.6GHz dual-core Intel Core i5, 128GB) - Space Gray (Renewed)
+  <span class="price-tag">$299.00</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/4gbKaOV" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="laptop">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/51ellgSYmxL._AC_SL1500_.jpg"alt="New Apple MacBook Pro">
+          </div>
+      <div class="card-body">
+        <span class="card-category">MacBook Pro<B></B></span>
+        <h2 class="card-title">New Apple MacBook Pro</h2> 
+        <p class="card-description"></p>Apple Magic Keyboard Folio: iPad Keyboard and case for iPad (A16 and 10th Generation), Detachable Two-Piece Design that attaches magnetically, Built-in trackpad, US English – White | Detachable keyboard with trackpad and 14-key function row for typing, navigation and protection
+  <span class="price-tag">$349.00</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/3TMyQ4p" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="laptop">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/71++yARjN+L._AC_SL1500_.jpg"alt="Apple Magic Keyboard Folio">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Apple<B></B></span>
+        <h2 class="card-title">Apple Magic Keyboard Folio</h2> 
+        <p class="card-description"></p>Apple Magic Keyboard Folio: iPad Keyboard and case for iPad (A16 and 10th Generation), Detachable Two-Piece Design that attaches magnetically, Built-in trackpad, US English – White | Detachable keyboard with trackpad and 14-key function row for typing, navigation and protection
+  <span class="price-tag">$199.00</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/45RUoiG" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="laptop">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/71AUi2fBzaL._AC_SL1500_.jpg"alt="Android Tablet 10 Inch with Octa-Core Processor ">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Android Tablet<B></B></span>
+        <h2 class="card-title">Android Tablet 10 Inch with Octa-Core Processor </h2> 
+        <p class="card-description"></p>Android Tablet 10 Inch with Octa-Core Processor | 18GB RAM 128GB ROM 1TB Expandable, 1280x800 HD IPS Display, 6000mAh, Widevine L1, GPS, 5G WiFi, BT5.0, 5MP+8MP Dual Camera
+  <span class="price-tag">$74.99</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/4qeFwo7" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="laptop">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/713kqvNOS3L._AC_SL1500_.jpg"alt="HOTTABLET Tablet 7Inch Android 14.0">
+          </div>
+      <div class="card-body">
+        <span class="card-category">HOTTABLET Tablet<B></B></span>
+        <h2 class="card-title">HOTTABLET Tablet 7Inch Android 14.0</h2> 
+        <p class="card-description"></p>HOTTABLET Tablet 7Inch Android 14.0 with Protective Case, 8GB(3+5GB Expand) RAM+ 32GB ROM, IPS Screen, Dual Camera, Bluetooth 5.0 WiFi Tab (Black)  
+  <span class="price-tag">$38.99</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/3RXIuk5" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="laptop">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/61Ek4x0pWDL._AC_SL1500_.jpg"alt="HP Stream 14 Laptop with AI Copilot">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Hp Laptop<B></B></span>
+        <h2 class="card-title">HP Stream 14" Laptop with AI Copilot</h2> 
+        <p class="card-description"></p>HP Stream 14" Laptop with AI Copilot, Flagship for Students & Business, 13th Gen Intel 4-Core, 4GB RAM, 1.12TB Storage (128GB UFS + 1TB Docking Station), Office 365 1-Year, Win 11 S, Willow Green
+  <span class="price-tag">$299.00</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/4qcNkql" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="laptop">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/71x80fA1lwL._AC_SL1500_.jpg"alt="Dell Latitude 7480 14 FHD Business Laptop">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Dell Latitude<B></B></span>
+        <h2 class="card-title">Dell Latitude 7480 14" FHD Business Laptop</h2> 
+        <p class="card-description"></p>Dell Latitude 7480 14" FHD Business Laptop Computer, Intel Core i5-6300U 2.4GHz to 3.0GHz, 8GB RAM, 256GB SSD, Latitude Laptop Windows 11 Pro 
+  <span class="price-tag">$269.95</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/4zckRor" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="laptop">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://m.media-amazon.com/images/I/71ClAM6oYZL._AC_SL1500_.jpg"alt="Lenovo ThinkPad X13 Gen1 Laptop">
+          </div>
+      <div class="card-body">
+        <span class="card-category">lenova<B></B></span>
+        <h2 class="card-title">Lenovo ThinkPad X13 Gen1 Laptop</h2> 
+        <p class="card-description"></p>Lenovo ThinkPad X13 Gen1 Laptop, 13.3" Notebook Computer, 10th Gen Quad-Core i5-10310U up to 4.4 GHz, 16GB RAM, 256GB SSD, HDMI, Windows 11 
+  <span class="price-tag">$256.00</span>
+        <div class="card-footer">
+          <a href="https://amzn.to/4zckw59" target="_blank" class="btn-buy">
+            Buy on Amazon &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="clothing">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://img.ltwebstatic.com/v4/j/spmp/2026/01/02/af/17673214186bbd14774f1474fbaa523348272b1cb1.jpg"alt="1 Pair Elegant Solid Color Slip-On Sandals">
+          </div>
+      <div class="card-body">
+        <span class="card-category">Sandals<B></B></span>
+        <h2 class="card-title">1 Pair Elegant Solid Color Slip-On Sandals</h2> 
+        <p class="card-description"></p>1 Pair Elegant Solid Color Slip-On Sandals, Fashionable Casual Beach/Home Wear For Summer, Minimalist 
+  <span class="price-tag">$9.45</span>
+        <div class="card-footer">
+          <a href="https://onelink.shein.com/47/5ylkuasy97jo" target="_blank" class="btn-buy">
+            Buy on shein &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="headphones">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://img.ltwebstatic.com/v4/p/spmp/2026/06/11/f1/178118573806c4715dcde0ef07b06972e04e909c52_square.png"alt="Sport Bluetooth 5.3 Headphone">
+          </div>
+      <div class="card-body">
+        <span class="card-category">headphones<B></B></span>
+        <h2 class="card-title">Sport Bluetooth 5.3 Headphones</h2> 
+        <p class="card-description"></p>Sport Bluetooth 5.3 Headphones Wireless Bluetooth Headphones For Outdoor Sports & Gaming, Noise Cancelling Bluetooth Headset With Microphone, Suitable For Home, Office, Mobile Phones, Computers, Tablets Long Battery Life For Gym Sports 
+  <span class="price-tag">$11.98</span>
+        <div class="card-footer">
+          <a href="https://onelink.shein.com/47/5ylk7c3027vg" target="_blank" class="btn-buy">
+            Buy on shein &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
+    <article class="card" data-category="clothing">
+      <span class="card-badge">Top Pick</span>
+      <div class="card-image-wrapper">
+        <img src="https://img.ltwebstatic.com/v4/j/spmp/2026/06/09/6c/17809980125b1a321e6fae3e021dfd788280257ab6.jpg"alt="2026 Summer Y2K Vintage Sexy Medium Blue Skinny Jeans">
+          </div>
+      <div class="card-body">
+        <span class="card-category">women Jeans<B></B></span>
+        <h2 class="card-title">2026 Summer Y2K Vintage Sexy Medium Blue Skinny Jeans</h2> 
+        <p class="card-description"></p>2026 Summer Y2K Vintage Sexy Medium Blue Skinny Jeans Women's Streetwear Stretch Ripped Denim Casual Fall 
+  <span class="price-tag">$28.09</span>
+        <div class="card-footer">
+          <a href="https://onelink.shein.com/47/5yljkz2e34p0" target="_blank" class="btn-buy">
+            Buy on shein &rarr;
+          </a>
+          <span class="affiliate-note">Affiliate Link</span>
+        </div>
+      </div>
+      </div>
+    </article>
+    <!-- Headset Product Card -->
     <article class="card" data-category="women">
       <span class="card-badge">Top Pick</span>
       <div class="card-image-wrapper">
@@ -571,13 +980,13 @@
       </div>
     </article>
     <!-- Headset Product Card -->
-    <article class="card" data-category="clothing">
+    <article class="card" data-category="women">
       <span class="card-badge">Top Pick</span>
       <div class="card-image-wrapper">
         <img src="https://img.ltwebstatic.com/v4/j/spmp/2026/06/13/f5/1781335559e6fd11a92aec46f4a07d547d784974c7_square.jpg"alt="RISNOW 3-Piece Perfume Set">
           </div>
       <div class="card-body">
-        <span class="card-category">women<B></B></span>
+        <span class="card-category">Perfume Set<B></B></span>
         <h2 class="card-title">RISNOW 3-Piece Perfume Set</h2> 
         <p class="card-description"></p>RISNOW 3-Piece Perfume Set, Eau De Parfum For Women, Fragrance Spray Set, Perfume Gift, Femme Perfume Spray, Women's Long-Lasting Perfume, Day Or Night Fragrance, Casual Perfume 
   <span class="price-tag">$3.30</span>
